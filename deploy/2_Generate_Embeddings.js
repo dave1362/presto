@@ -14,7 +14,7 @@ var rangeEnd = ee.Date('2020-03-01');
 
 var ENDPOINT =
     'projects/presto-deployment/locations/us-central1/endpoints/vertex-pytorch-presto-endpoint';
-var RUN_VERTEX_AI = true; // Leave this as false to get a cost estimate first
+var RUN_VERTEX_AI = false; // Leave this as false to get a cost estimate first
 //------------------------------------------------------------------------------------
 
 Map.centerObject(roi, 10);

@@ -10,7 +10,7 @@ var embeddings = ee.Image(
 var roi = embeddings.geometry({ geodesics: true });
 Map.centerObject(roi, 11);
 
-// 2. Cluster embeddings and display
+// 2. Cluster embeddings and display (7 clusters)
 var training = embeddings.sample({ region: roi, scale: 10, numPixels: 10000 });
 var trainedClusterer = ee.Clusterer.wekaKMeans(7).train(training);
 var result = embeddings.cluster(trainedClusterer);
