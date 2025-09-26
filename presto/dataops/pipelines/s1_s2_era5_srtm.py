@@ -50,12 +50,12 @@ ERA5_BANDS = ["temperature_2m", "total_precipitation"]
 # for temperature, shift to celcius and then divide by 35 based on notebook (ranges from)
 # 37 to -22 degrees celcius
 # For rainfall, based on
-# https://github.com/nasaharvest/lem/blob/main/notebooks/exploratory_data_analysis.ipynb
+# https://github.com/nasaharvest/presto/blob/main/notebooks/exploratory_data_analysis.ipynb
 ERA5_SHIFT_VALUES = [-272.15, 0.0]
 ERA5_DIV_VALUES = [35.0, 0.03]
 SRTM_BANDS = ["elevation", "slope"]
 # visually gauged 90th percentile from
-# https://github.com/nasaharvest/lem/blob/main/notebooks/exploratory_data_analysis.ipynb
+# https://github.com/nasaharvest/presto/blob/main/notebooks/exploratory_data_analysis.ipynb
 SRTM_SHIFT_VALUES = [0.0, 0.0]
 SRTM_DIV_VALUES = [2000.0, 50.0]
 
